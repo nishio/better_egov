@@ -12,6 +12,7 @@ const Index = () => {
 ReactDOM.render(
   <BrowserRouter>
     <Route path="/" exact children={<Index />} />
+    <Route path="/:law" exact children={<App />} />
     <Route path="/:law/:path" children={<App />} />
   </BrowserRouter>,
   document.getElementById('root'));
